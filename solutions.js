@@ -1,7 +1,8 @@
 // Sum of Two Numbers
 function sum(a, b) {
   if (typeof b !== 'number' || typeof a !== 'number') {
-    return 'Los datos de entrada no son adecuados';
+    console.log("Los datos de entrada no son adecuados");
+    return;
   }
   return a + b;
 }
@@ -9,7 +10,7 @@ function sum(a, b) {
 // Factorial of a Number
 function factorial(n) {
   if (typeof n !== 'number' || !Number.isInteger(n) || n < 0) {
-    return 'Los datos de entrada no son adecuados';
+    return "Los datos de entrada no son adecuados";
   }
   if (n === 0 || n === 1) {
     return 1;
@@ -24,7 +25,7 @@ function factorial(n) {
 // Find the Largest Number
 function findLargest(arr) {
   if (!Array.isArray(arr) || arr.some(isNaN)) {
-    return 'Los datos de entrada no son adecuados';
+    return '"Los datos de entrada no son adecuados"';
   }
   return Math.max(...arr);
 }
